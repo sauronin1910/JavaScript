@@ -94,7 +94,6 @@ let enterance = Math.floor((Math.ceil(apart / howManyAparts) / howManyfloors));
 let floor = Math.floor(apart % howManyAparts);
 
 
-
 alert("під'їзд " + enterance);
 alert("поверх " + floor);
 
