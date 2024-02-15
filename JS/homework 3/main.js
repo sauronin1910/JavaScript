@@ -51,16 +51,74 @@
 
 //  Завдання 6
 
-{
-    let str = "Було жарко. Василь пив пиво вприкуску з креветками"
-    let result = str.split("пиво").join("чай")
-    console.log(result) //"Було жарко. Василь пив чай уприкуску з креветками"
+// {
+//     let str = "Було жарко. Василь пив пиво вприкуску з креветками"
+//     let result = str.split("пиво").join("чай")
+//     console.log(result) //"Було жарко. Василь пив чай уприкуску з креветками"
 
-}
+// }
 
 // Завдання 7
 
-{
+// {
 
-    
+// {
+//     let str = "якийсь текст, в якому є один тег <br /> і всяке інше";
+
+//     let startIndex = str.indexOf("<");
+
+//     let endIndex = str.indexOf(">", startIndex) + 1;
+
+//     let result = str.slice(0, startIndex) + str.slice(endIndex);
+
+//     console.log(result);
+
+// }
+
+// }
+
+
+
+//  Завдання 8
+// {
+
+//     let str = "якийсь текст у якому є один тег <br /> і всяке інше"
+
+//     let startIndex = str.indexOf("<");
+
+//     let endIndex = str.indexOf(">", startIndex) + 1;
+
+//     let result = str.slice(0, startIndex) + str.slice(startIndex, endIndex).toUpperCase() + str.slice(endIndex);
+
+//     console.log(result);
+// }
+
+//  Завдання 9
+
+// {
+//     let userInput = prompt(" введіть якийсь текс із використанням \\n:");
+
+
+//     userInput = userInput.split("\\n").join("\n");
+
+//     console.log(userInput);
+// }
+
+
+//  Завдання 10 ютуб
+{
+    const youtubeRegex = /http(?:s?):\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?‌​[\w\?‌​=]*)?/;
+
+
+    let userInput = prompt("Введіть текст з посиланням на YouTube відео:");
+
+
+    let videoId = userInput.match(youtubeRegex)[1];
+
+
+    let embeddedCode = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+
+
+    document.write(embeddedCode);
+
 }
